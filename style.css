@@ -1,7 +1,16 @@
 *{
-
+margin:0px;
 }
 
+
+body{
+    background-color:#F7F7F7
+}
+header {
+    background-color: white;
+}
+
+/*---------------------------------------------------------------Upper nav-----------------------------*/
 .upper-nav{
     display:flex;
     justify-content: space-between;
@@ -44,8 +53,10 @@
    
 }
 .social-icons{
-
+display:flex;
     padding-right: 50px;
+align-items: center;
+gap:5px
 }
 
 
@@ -61,6 +72,22 @@
     display:flex;
     position: relative
 }
+/*---------------------------------------------------------------Awesome fonts-----------------------------*/
+.fa-square-twitter:hover{
+
+    color:#1A8CD8;
+}
+
+
+.fa-square-facebook:hover{
+    color:#254a8a;
+}
+
+
+.fa-square-instagram:hover{
+    color: #f06a6a;
+}
+
 
 
 
@@ -131,7 +158,6 @@
     
 }
 
-
 .lower-nav div{
     padding: 0 20px 0 20px; /*arriba derecha abajo izquierda*/
 }
@@ -147,6 +173,47 @@
 }
 
 
+/*--------------------------------------------------------------------------------------contenido central*/
+
+#centerContent{
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    background-color: #fff;
+}
+
+.fullWidth{
+    
+    margin-top:120px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:10px;
+    display:grid;
+    grid-template-columns: repeat(6,minmax(160px,1fr));
+    grid-template-rows: repeat(2,minmax(320px,1fr));
+    grid-gap:20px;
+   /* justify-content: space-evenly;
+    align-content: center; */
+}
+
+
+.card{
+    background-color: pink;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.cover-album{
+    object-fit:scale-down;
+    width:80%;
+
+
+  
+
+}
 
 
 
@@ -200,5 +267,30 @@
     
         }
     
+        @media  (min-width: 481px) and (max-width: 1023px){
+        .fullWidth {
+          padding: 20px;
+        }
+    }
+
+        @media  (min-width: 0px) and (max-width: 1440px){
+            .fullWidth{
+            grid-template-columns: repeat(6,minmax(100px,1fr));
+           grid-template-rows: repeat(2,minmax(300px,1fr));
+            
+
+            }
+        }
+
+        @media  (min-width: 0px) and (max-width: 1200px){
+            .fullWidth{
+            grid-template-columns: repeat(3,minmax(100px,1fr));
+            grid-template-rows: repeat(4,minmax(auto-fit,auto-fit));
+            
+
+            }
+        }
+
+
 
 /*---------------------------------------------------------------@medias-----------------------------*/
