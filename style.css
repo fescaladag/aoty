@@ -40,7 +40,7 @@ header {
 
 
 .lower-nav a{
-    color:black
+    color:black;
     text-decoration: none;
 }
 
@@ -73,6 +73,11 @@ gap:5px
     position: relative
 }
 /*---------------------------------------------------------------Awesome fonts-----------------------------*/
+.fa-square-twitter{
+
+    color:black;
+}
+
 .fa-square-twitter:hover{
 
     color:#1A8CD8;
@@ -202,17 +207,104 @@ gap:5px
     background-color: pink;
     display:flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content:space-around;
+    font-family: 'Ubuntu';
     
 }
 
 .cover-album{
     object-fit:scale-down;
     width:80%;
+}
+
+.artist{
+    font-weight: 500;
+}
+.album{
+    font-weight: 100 ;
+}
+/*--------------------------------------------------------------------------------------score bars*/
 
 
+.rating-bars {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+
+
+.rating-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    margin-top: 10px;
+    
+}
+
+
+.rating-bar-bg,
+.rating-bar-bg .bar-position {
+  height: 6px;
   
 
+
+  }
+
+.rating-bar-bg {
+    position: relative;
+    background: #f0f0f0;
+    margin-top: 7px;
+    margin-left: 0px;
+    width:40%;
+    
+  }
+  
+  .rating-bar-bg .green {
+    background-color: #85CE73;
+  }
+
+  .rating-bar-bg .bar-position {
+    left: 0;
+    position: absolute;
+    width: 0;
+  }
+
+  .rating-bar-bg .yellow {
+    background-color: #F0E68C;
+  }
+  .rating-bar-bg .red {
+    background-color: #FC5959;
+  }
+
+
+
+
+
+
+
+
+.score-val{
+    font-size: 14px;
+    font-weight: 900px;
+}
+
+  .score-txt{   
+    font-size: 11px;
+    color:gray;
+    text-align:left;
+  
+    position:relative;
+  
+    
+  }
+
+
+hr{
+    
 }
 
 
